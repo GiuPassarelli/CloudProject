@@ -12,6 +12,6 @@ Run projeto.py para rodar
 
 Após criada, entre na instância do auto-scale por ssh e rode um curl para o database albums com o elastic ip de north virginia, por exemplo:
 
-curl -X GET http://3.219.122.232:5000/albums
+$ curl -X GET http://3.219.122.232:5000/albums
 
 Database usado: couchdb
