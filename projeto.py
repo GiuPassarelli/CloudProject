@@ -204,7 +204,7 @@ try:
     key = paramiko.RSAKey.from_private_key_file("./projeto_key.pem")
     prk_client.connect(hostname = instance.public_ip_address, username="ubuntu", pkey=key)
 
-    cmd = "sudo tmux new -d -s execution 'export IPNEXT={};python3 /Service-REST/servidor.py'".format(IP_privado_RD)
+    cmd = "sudo tmux new -d -s execution 'export IPNEXT={};python3 /Service-REST/servidor.py'".format(PublicIp_NV)
 
     # Execute a command(cmd) after connecting/ssh to an instance
     stdin, stdout, stderr = prk_client.exec_command(cmd)
