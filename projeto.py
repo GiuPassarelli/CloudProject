@@ -220,7 +220,7 @@ try:
     prk_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
     key = paramiko.RSAKey.from_private_key_file("./projeto_key.pem")
-    prk_client.connect(hostname = instance_RD.public_ip_address, username="ubuntu", pkey=key)
+    prk_client.connect(hostname = PublicIp_NV, username="ubuntu", pkey=key)
 
     cmd = "sudo tmux new -d -s execution 'export IPNEXT={};python3 /Service-REST/servidor.py'".format(PublicIp_OHIO)
 
