@@ -1,5 +1,7 @@
 # CloudProject
 
+AWS Cloud project using python and boto3 to deploy a couchDB database server and a mock software server used to connect with the DB. This project integrates AWS products such as EC2 instances, elastic IP, Auto Scaling groups, Load balancer among others.
+
 Para usar:
 
 Instalar boto3 e paramiko
